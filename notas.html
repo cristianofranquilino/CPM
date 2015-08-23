@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="escola">
+<head>
+	<meta charset="utf-8">
+	<title>Escola</title>
+	<link href="style/bootstrap.min.css" type="text/css" rel="stylesheet"></link>
+	<style media="screen">
+	.jumbotron{
+		margin-top: 3px;
+	}
+	.bg-danger, .bg-success{
+		font-weight: bolder;
+	}
+	</style>
+	<script src="lib/angular.min.js"></script>
+	<script type="text/javascript">
+		angular.module("escola", []);
+		angular.module("escola").controller("principalCtrl", function($scope){
+			$scope.mensagem = "teste123";
+		});
+	</script>
+</head>
+<body>
+		<div class="container-fluid">
+			<div class="page-header bg-primary">
+				<h1>
+					<img src="images/Teste-logo.gif" class="text-left" height="100px" width="100px">
+					Escola
+					<img src="images/Teste-logo.gif" class="pull-right" style="" height="100px" width="100px">
+				</h1>
+	  	</div>
+
+			<div class=”wrapper” role=”main”>
+				<div class="row">
+			 	 <div class="col-md-2">
+			      <ul class="nav nav-pills nav-stacked">
+			        <li class="active"><a href="#">Menu</a></li>
+			        <li><a href="#">Dados Cadastrais</a></li>
+			        <li><a href="#">Grade de Matérias</a></li>
+			        <li><a href="#">Notas</a></li>
+			      </ul>
+			  	</div>
+
+					<div class="col-md-9">
+
+						<table class="table table-bordered">
+					    <thead>
+					      <tr>
+					        <th rowspan="2" class="text-center">Matérias</th>
+					        <th colspan="4" class="text-center">Avaliações</th>
+					      </tr>
+								<tr>
+									<th class="text-center">Av1</th>
+									<th class="text-center">Av2</th>
+									<th class="text-center">Av3</th>
+									<th class="text-center">Média</th>
+								</tr>
+					    </thead>
+					    <tbody>
+					      <tr class="text-center">
+					        <td class="text-left">Análise</td>
+					        <td class="">4.8</td>
+					        <td class="">6.7</td>
+									<td class="">2.8</td>
+									<td class="text-danger">5.8</td>
+					      </tr>
+					      <tr class="text-center">
+					        <td class="text-left">Empreendedorismo</td>
+									<td class="">8.5</td>
+					        <td class="">7.2</td>
+									<td class="">9.5</td>
+									<td class="text-success">9.4</td>
+					      </tr>
+					      <tr class="text-center">
+					        <td class="text-left">Gestão</td>
+									<td class="">5.7</td>
+					        <td class="">6.7</td>
+									<td class="">9.8</td>
+									<td class="text-danger">5.8</td>
+					      </tr>
+					    </tbody>
+					  </table>
+
+					</div>
+
+				</div>
+			</div>
+
+			<footer class="well">
+				Criado por Cristiano Franquilino
+			</footer>
+
+		</div>
+
+</body>
+</html>
